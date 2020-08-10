@@ -19,7 +19,8 @@ Uses nodemailer and a google sheets document to send out mass emails
 }
 ```
 
-* Run `npm install` in the terminal in the project directory.
+* **PACKAGES**
+	* Run `npm install` in the terminal in the project directory.
 
 ## Run
 In the terminal, run `node index.js`.
