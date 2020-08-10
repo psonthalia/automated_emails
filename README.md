@@ -11,13 +11,14 @@ Uses nodemailer and a google sheets document to send out mass emails
 	* Name the column with emails: `email` 
 * **CONFIG.JSON**
 	* You must make a `config.json` file in the enclosed folder in the following format:
-```
-{
-	"user": "YOUR EMAIL HERE",
-	"pass": "YOUR PASSWORD HERE",
-	"sheetId": "YOUR GOOGLE SHEET ID"
-}
-```
+
+    ```JSON
+    {
+	    "user": "YOUR EMAIL HERE",
+	    "pass": "YOUR PASSWORD HERE",
+	    "sheetId": "YOUR GOOGLE SHEET ID"
+    }
+    ```
 
 * **PACKAGES**
 	* Run `npm install` in the terminal in the project directory.
