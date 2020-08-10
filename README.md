@@ -11,21 +11,20 @@ Uses nodemailer and a google sheets document to send out mass emails
 	* Name the column with emails: `email` 
 * **CONFIG.JSON**
 	* You must make a `config.json` file in the enclosed folder in the following format:
-	<br />
-	```
-	{
-		"user": "YOUR EMAIL HERE",
-		"pass": "YOUR PASSWORD HERE",
-		"sheetId": "YOUR GOOGLE SHEET ID"
-	}
-	```
+```
+{
+	"user": "YOUR EMAIL HERE",
+	"pass": "YOUR PASSWORD HERE",
+	"sheetId": "YOUR GOOGLE SHEET ID"
+}
+```
 
 * Run `npm install` in the terminal in the project directory.
 
 ## Run
 In the terminal, run `node index.js`.
 
-##Notes
+## Notes
 * In `index.js` change the `subject` to your email subject and `html` to the html for your email body
 * In `index.js` change the `sleep_duration` to change the duration in between email sends (This is to prevent Google from blocking you)
 * For customized fields in the body, add the column to your sheet (e.g. name) and then in the html, you can add `${result.name}` within the html string
